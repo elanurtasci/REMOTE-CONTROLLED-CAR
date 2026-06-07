@@ -4,12 +4,14 @@ It utilizes the hardware interrupt capabilities of the STM32 to handle user comm
 
 Interrupt-Driven Communication: Uses STM32's hardware interrupts (HAL_UART_Receive_IT) for non-blocking, real-time Bluetooth command processing.
 
+
 //KEY FEATURES//
 Smart Power Management: Steps up a single 3.7V Li-ion battery to a stable 12.2V using a Boost Converter to fully power the motors.
 
 Dual H-Bridge Control: Drives DC motors using the L298N driver based on incoming direction commands.
 
 Visual Feedback: Toggles an onboard LED on every successful data reception to show active link connection.
+
 
 //HARDWARE COMPONENTS//
 Microcontroller: STM32F407G-DISC1 (ARM Cortex-M4)
@@ -21,6 +23,7 @@ Motor Driver: L298N Dual H-Bridge Driver
 Connectivity: HC-05/HC-06 Bluetooth Module (UART @ 9600 Baud Rate)
 
 Firmware Framework: STM32CubeIDE / HAL (Hardware Abstraction Layer)
+
 
 //COMMAND SET//
 F / f / 1 : Move Forward
